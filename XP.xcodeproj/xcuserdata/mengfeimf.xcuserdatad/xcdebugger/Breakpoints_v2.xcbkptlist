@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XP/XP.h"
-            timestampString = "454557721.91102"
+            timestampString = "454911849.799094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "~XP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -38,15 +38,110 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XP/XP.h"
+            timestampString = "454911849.799094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "release()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;int&gt;::release()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454558251.134386"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "75">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Derive&gt;::release()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454558251.134699"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "75">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Base&gt;::release()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454558251.135136"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XPTests/XPTests.m"
+            timestampString = "454829348.874902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-testExample"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XP/XP.h"
+            timestampString = "454911849.799094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "_mutex(other._mutex)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XP/XP.h"
-            timestampString = "454557962.603517"
+            timestampString = "454911849.799094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "release()"
             landmarkType = "7">
             <Locations>
@@ -58,12 +153,12 @@
                   moduleName = "XPTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
-                  timestampString = "454557964.996127"
+                  timestampString = "454911917.177057"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "75">
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,12 +168,12 @@
                   moduleName = "XPTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
-                  timestampString = "454557964.996368"
+                  timestampString = "454911917.177336"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "75">
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -88,14 +183,220 @@
                   moduleName = "XPTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
-                  timestampString = "454557964.996639"
+                  timestampString = "454911917.177616"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "75">
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XP/XP.h"
+            timestampString = "454911849.799094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "_mutex(other._mutex)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XP/XP.h"
+            timestampString = "454912154.456083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "operator=(const XP&lt;Y&gt;&amp; other)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Base&gt;::operator-&gt;()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.177879"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Derive&gt;::operator-&gt;()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.178081"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XP/XP.h"
+            timestampString = "454911849.799094"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "increment()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Base&gt;::increment()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.180073"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Derive&gt;::increment()"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.180227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XP/XP.h"
+            timestampString = "454911906.911768"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "_mutex(new std::mutex)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Base&gt;::XP(Base*, std::__1::function&lt;void (Base*)&gt;)"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.180445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;int&gt;::XP(int*, std::__1::function&lt;void (int*)&gt;)"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.180597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;int&gt;::XP(int*, std::__1::function&lt;void (int*)&gt;)"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.180823"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "feimengspirit::XP&lt;Base&gt;::XP(Base*, std::__1::function&lt;void (Base*)&gt;)"
+                  moduleName = "XPTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mengfeimf/GitHub/XP/XP/XP.h"
+                  timestampString = "454911917.181074"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XPTests/XPTests.m"
+            timestampString = "454911914.769395"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-testExample"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

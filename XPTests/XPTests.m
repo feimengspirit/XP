@@ -56,33 +56,35 @@ XP<Base> func()
 }
 
 - (void)testExample {
-    for (int i = 0; i < 100; ++i) {
-        XP<Base> bXP(new Derive, [](Base *p){ delete p; });
+    for (int i = 0; i < 1; ++i) {
+        XP<Base> bXP(new Derive);
         XP<Base> aXP = bXP;
         XP<Base> cXP(aXP);
         XP<Base> dXP(bXP);
         XP<Derive> eXP(bXP);
-        
+
         XP<Base> fXP = new Derive;
         XP<Base> gXP = fXP;
-        XP<Base> hXP(gXP);
-        
+        XP<Base> hXP(eXP);
+
         aXP->test();
         printf("i: %d\n", aXP->_i);
         bXP->test();
         cXP->test();
         dXP->test();
         eXP->test();
-        
+
         fXP->test();
         gXP->test();
         hXP->test();
-        
+
         XP<int> iXP = new int(0);
-        
+
         XP<Base> jXP(new Derive[10], [](Base *p){ delete []p; });
-        
+
         XP<Base> kXP = func();
+        kXP = aXP;
+        kXP = new Derive;
     }
 }
 

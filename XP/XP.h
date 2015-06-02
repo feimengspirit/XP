@@ -10,10 +10,12 @@
 #define XP_XP_h
 
 #include <functional>
+#include <mutex>
 
 #define SAFE_DELETE(p)  \
 do {                    \
     if (p) delete p;    \
+    p = nullptr;        \
 } while (0)
 
 namespace feimengspirit
@@ -30,9 +32,6 @@ public:
     XP(ElementType *other, Deletor d = [](T *p) { if (p) delete p; });
     ~XP();
 
-    template <typename Y>
-    XP(Y *other, Deletor d = [](T *p) { if (p) delete p; });
-    
     XP(const XP<T>& other);
     
     template <typename Y>
@@ -47,16 +46,21 @@ public:
     
 private:
     void release();
+    void increment();
     
 public:
-    CountType * _count;
+    CountType *_count;
     ElementType *_pointer;
     Deletor _deletor;
+    std::mutex *_mutex;
 };
   
 template <typename T>
 XP<T>::XP(ElementType *other, Deletor d)
-: _count(new CountType(0)), _pointer(nullptr), _deletor(d)
+: _count(new CountType(1)),
+  _pointer(other),
+  _deletor(d),
+  _mutex(new std::mutex)
 {
 }
 
@@ -69,45 +73,50 @@ XP<T>::~XP()
 template <typename T>
 void XP<T>::release()
 {
-    if (0 == --*_count) {
+    {
+    std::lock_guard<std::mutex> lck(*_mutex);
+    --*_count;
+    }
+    if (0 ==*_count) {
         _deletor(_pointer);
+        _pointer = nullptr;
         SAFE_DELETE(_count);
+        SAFE_DELETE(_mutex);
     }
 }
-
+    
 template <typename T>
-template <typename Y>
-XP<T>::XP(Y *other, Deletor d)
-: _count(new CountType(1)), _pointer(other), _deletor(d)
+void XP<T>::increment()
 {
+    std::lock_guard<std::mutex> lck(*_mutex);
+    ++*_count;
 }
 
 template <typename T>
 XP<T>::XP(const XP<T>& other)
-:_count(other._count), _pointer(other._pointer), _deletor(other._deletor)
+: _count(other._count), _pointer(static_cast<ElementType*>(other._pointer)),
+  _deletor(other._deletor),
+  _mutex(other._mutex)
 {
-    ++*_count;
+    increment();
 }
 
 template <typename T>
 template <typename Y>
 XP<T>::XP(const XP<Y>& other)
 : _count(other._count), _pointer(static_cast<ElementType*>(other._pointer)),
-    _deletor(other._deletor)
+  _deletor([&](T *p){other._deletor(static_cast<Y*>(p));}),
+  _mutex(other._mutex)
 {
+    increment();
 }
     
 template <typename T>
 XP<T>& XP<T>::operator=(const XP<T>& other)
 {
-    this->release();
-    this->_pointer = other._pointer;
-    this->_count = other._count;
-    this->_deletor = other._deletor;
-    ++*_count;
-    return *this;
+    return this->operator=<T>(other);
 }
-    
+
 template <typename T>
 template <typename Y>
 XP<T>& XP<T>::operator=(const XP<Y>& other)
@@ -115,8 +124,9 @@ XP<T>& XP<T>::operator=(const XP<Y>& other)
     this->release();
     this->_pointer = static_cast<ElementType*>(other._pointer);
     this->_count = other._count;
-    this->_deletor = other._deletor;
-    ++*_count;
+    this->_deletor = [&](T *p){ other._deletor(static_cast<Y*>(p)); };
+    this->_mutex = other._mutex;
+    increment();
     return *this;
 }
 
