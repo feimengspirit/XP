@@ -43,6 +43,8 @@ public:
     XP<T>& operator=(const XP<Y>& other);
     
     ElementType* operator->();
+    ElementType operator*();
+    const ElementType& operator*() const;
     
 private:
     void release();
@@ -135,6 +137,19 @@ typename XP<T>::ElementType* XP<T>::operator->()
 {
     return _pointer;
 }
+
+template <typename T>
+typename XP<T>::ElementType XP<T>::operator*()
+{
+    return *_pointer;
 }
+
+template <typename T>
+const typename XP<T>::ElementType& XP<T>::operator*() const
+{
+    return *_pointer;
+}
+}
+
 
 #endif

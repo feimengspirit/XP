@@ -19,7 +19,7 @@ using namespace feimengspirit;
 class Base
 {
 public:
-    virtual void test() = 0;
+    virtual void test() const = 0;
     virtual ~Base()
     {
         printf("deconstructored!\n");
@@ -31,7 +31,7 @@ public:
 class Derive : public Base
 {
 public:
-    void test()override
+    void test() const override
     {
         printf("hello\n");
     }
@@ -85,6 +85,9 @@ XP<Base> func()
         XP<Base> kXP = func();
         kXP = aXP;
         kXP = new Derive;
+        
+        XP<Derive> lXP = new Derive;
+        (*lXP).test();
     }
 }
 
